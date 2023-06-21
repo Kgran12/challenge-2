@@ -60,7 +60,8 @@ header nav ul li {
    display: flex;
    justify-content: flex-end;
    align-content: center;
-   padding-left: 250px;
+   padding-left: 170px;
+   padding-right: 20px;
    color: var(--dark-blue);
    font-weight: 400;
 
