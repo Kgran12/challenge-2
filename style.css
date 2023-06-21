@@ -66,25 +66,51 @@ header nav ul li {
 
 }
  .main-project {
+flex: 1;
+background-color: var(--white);
+padding: 20px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
 
+.main-project img {
+height: 400px;
+width: 400px;
 }
 
 .secondary-projects {
-
+flex 3;
+background-color: var(--white);
+padding: 20px;
+display:flex;
+flex-wrap: wrap;
+justify-content: center;
 }
-#contact-me h2 p {
-    padding: 15px;
+
+.secondary-projects img {
+    height: 200px;
+    width: 200px;
+    }
+
+#contact-me ul {
+    list-style-type: none;
+  
+}
+
+#contact-me li {
     display: flex;
     display: inline-block;
     justify-content: center;
-  
+    padding-left: 250px;
+    color: var(--dark-blue);
+    font-weight: 400;
 }
 
 footer {
     display: flex;
     justify-content: center;
     padding: 20px;
-    padding-left: 250px;
     font-family: var(--main-font);
     background-color: var(--dark-blue);
     color: var(--white)
