@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
 }
+
 :root{
 --dark-blue: #09364d;
 --white: whitesmoke;
@@ -15,7 +16,11 @@ body {
 
 header {
     display: flex;
-    padding: 45px;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 15px 6% 15px 0;
     font-family: var(--main-font);
     background-color: var(--dark-blue)
 }
@@ -26,22 +31,31 @@ header h1{
     color:var(--white)
 }
 
-header nav {
-    padding-top: 20px;
-    font-family: var(--main-font);
-    font-size: 20px;
-}
-header nav ul{
-   list-style-type: none;
-   margin-left: 650px;
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-header nav ul li {
+nav a {
+   margin-right: 10px;
+   padding: 5px 10px;
+   background-size: 100% .2em;
+   background-position: bottom;
+   background-repeat: no-repeat;
+   transition: all .25s ease-in;
+   color:var(--white)
+}
+
+nav a:last-child {
+    margin-right: 0;
+}
+
+figure {
     display: flex;
     flex-wrap: wrap;
-    display: inline-block;
-    margin-left: 50px;
-    color: var(--white)
+    justify-content: center;
+    padding: 20px;
 }
 
 .main-sections h2 {
@@ -81,7 +95,7 @@ width: 400px;
 }
 
 .secondary-projects {
-flex 3;
+flex: 3;
 background-color: var(--white);
 padding: 20px;
 display:flex;
@@ -93,6 +107,7 @@ justify-content: center;
     height: 200px;
     width: 200px;
     }
+
 
 #contact-me ul {
     list-style-type: none;
